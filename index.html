@@ -1,11 +1,88 @@
 <html>
 <head>
-<title>Presentacion</title>
+  <meta charset="UTF-8">
+  <title>Inicio - Login y Registro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 50px;
+      padding: 50px;
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-<h1>Bienvenido a mi Presentacion</h1>
-<h2> Hola Soy Lucas Sebastian Muñoz, Tengo 18 años vivo en Gregorio de laferrere actualmente estoy cursando 6to año en C.I.A.T.A - I.N.A.C.</h2>
-  <h3><img src="Imagen Personal.jpg" alt="No se pudo cargar la imagen intente nuevamente mas tarde"></h3>
- <a href="index.html">← Volver al índice</a>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form action="login.html" method="post">
+      <label for="loginUser">Usuario:</label>
+      <input type="text" id="loginUser" name="usuario" required>
+
+      <label for="loginPass">Contraseña:</label>
+      <input type="password" id="loginPass" name="password" required>
+
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Registro</h2>
+    <form action="guardarUsuario.html" method="post">
+      <label for="regNombre">Nombre:</label>
+      <input type="text" id="regNombre" name="nombre" required>
+
+      <label for="regApellido">Apellido:</label>
+      <input type="text" id="regApellido" name="apellido" required>
+
+      <label for="regTelefono">Teléfono:</label>
+      <input type="tel" id="regTelefono" name="telefono" required>
+
+      <label for="regEmail">Email:</label>
+      <input type="email" id="regEmail" name="email" required>
+
+      <label for="regUser">Usuario:</label>
+      <input type="text" id="regUser" name="usuario" required>
+
+      <label for="regPass">Contraseña:</label>
+      <input type="password" id="regPass" name="password" required>
+
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+
 </body>
 </html>
+
