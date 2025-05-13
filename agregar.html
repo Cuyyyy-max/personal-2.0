@@ -1,0 +1,52 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar Usuario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Agregar Usuario</h2>
+  <form onsubmit="event.preventDefault(); alert('Usuario agregado'); window.location.href='personal.html';">
+    <input type="text" placeholder="Nombre" required>
+    <input type="text" placeholder="Apellido" required>
+    <input type="text" placeholder="Teléfono" required>
+    <input type="email" placeholder="Email" required>
+    <button type="submit">Agregar</button>
+  </form>
+</div>
+
+</body>
+</html>
